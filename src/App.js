@@ -1,15 +1,13 @@
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './App.css';
 import { Toaster } from 'react-hot-toast';
+import { RouterProvider } from 'react-router-dom';
+import router from './Routes/Routes';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello Developer</h1>
-      <FontAwesomeIcon icon={faCoffee} />
+    <RouterProvider router={router}>
       <Toaster></Toaster>
-    </div>
+    </RouterProvider>
   );
 }
 
