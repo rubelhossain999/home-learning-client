@@ -4,6 +4,7 @@ import Blog from '../Pages/Blog/Blog';
 import CourseSideBar from '../Pages/Courses/CourseSideBar';
 import Error from '../Pages/Error/Error';
 import FAQ from '../Pages/FAQ/FAQ';
+import FreeCourse from '../Pages/FreeCourse/FreeCourse';
 import Home from '../Pages/Home/Home';
 import Main from './Main';
 
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
             { path: '/', element: <Home></Home> },
             { path: '/courses', element: <CourseSideBar></CourseSideBar> },
             { path: '/blog', element:<Blog></Blog>  },
+            { path: '/freecourse', element:<FreeCourse></FreeCourse>  },
             { path: '/faq', element: <FAQ></FAQ> },
             { path: '*', element: <Error></Error>}
         ]

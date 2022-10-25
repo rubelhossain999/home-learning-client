@@ -11,7 +11,7 @@ const MobileMenu = () => {
                 <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/courses">Courses</Link></li>
-                    <li><Link to="/">Free Course</Link></li>
+                    <li><Link to="/freecourse">Free Course</Link></li>
                     <li><Link to="/faq">FAQ</Link></li>
                     <li><Link to="/blog">Blog</Link></li>
                 </ul>
