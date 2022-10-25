@@ -1,10 +1,12 @@
 import React from 'react';
+import CourseCart from './CourseCart';
+import CourseSideBar from './CourseSideBar';
 
 const Courses = () => {
     return (
-        <div>
-            <h1>This is a Courses</h1>
-        </div>
+        <>
+            <CourseCart></CourseCart>
+        </>
     );
 };
 
