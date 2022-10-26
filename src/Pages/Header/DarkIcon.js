@@ -1,3 +1,5 @@
+import { faLightbulb, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Dark from './Dark';
@@ -16,10 +18,10 @@ const DarkIcon = () => {
                     Profile
                 </div>
             </div>
-            <div onClick={ () => setTheme(colorTheme)} className='dark:bg-black'>
-                {colorTheme === "light" ? <Link className='bg-slate-400 dark:bg-slate-300 dark:text-slate-900 text-black font-bold p-2 rounded-md'>Light</Link>
-                :
-                <Link className='bg-black dark:bg-slate-500 dark:text-slate-100 font-bold p-2 rounded-md'>Dark</Link>
+            <div onClick={() => setTheme(colorTheme)}>
+                {colorTheme === "light" ? <FontAwesomeIcon className='text-3xl dark:bg-slate-600 cursor-pointer' icon={faLightbulb}></FontAwesomeIcon>
+                    :
+                    <FontAwesomeIcon className='text-3xl cursor-pointer' icon={faMoon}></FontAwesomeIcon>
                 }
 
             </div>
