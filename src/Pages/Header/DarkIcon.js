@@ -9,7 +9,7 @@ const DarkIcon = () => {
     const [colorTheme, setTheme] = Dark();
     return (
         <div className="navbar-end">
-            <div className='flex px-4 md:hidden sm:hidden'>
+            <div className='flex px-4'>
                 <div className='px-4'>
                     <Link className='px-4' to='/login'>Login</Link>
                     <Link to='/login'>Registration</Link>
@@ -19,9 +19,9 @@ const DarkIcon = () => {
                 </div>
             </div>
             <div onClick={() => setTheme(colorTheme)}>
-                {colorTheme === "light" ? <FontAwesomeIcon className='text-3xl dark:bg-slate-600 cursor-pointer' icon={faLightbulb}></FontAwesomeIcon>
+                {colorTheme === "light" ? <FontAwesomeIcon className='text-3xl text-white dark:bg-slate-600 cursor-pointer' icon={faLightbulb}></FontAwesomeIcon>
                     :
-                    <FontAwesomeIcon className='text-3xl cursor-pointer' icon={faMoon}></FontAwesomeIcon>
+                    <FontAwesomeIcon className='text-3xl text-black cursor-pointer' icon={faMoon}></FontAwesomeIcon>
                 }
 
             </div>
