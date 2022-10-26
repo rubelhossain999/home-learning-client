@@ -9,6 +9,7 @@ import Error from '../Pages/Error/Error';
 import FAQ from '../Pages/FAQ/FAQ';
 import FreeCourse from '../Pages/FreeCourse/FreeCourse';
 import Home from '../Pages/Home/Home';
+import Profile from '../Pages/Profile/Profile';
 import Main from './Main';
 
 const router = createBrowserRouter([
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
             { path: '/login', element: <Login></Login> },
             { path: '/registration', element: <Registration></Registration> },
             { path: '/forgotpass', element: <ForgotPassword></ForgotPassword> },
+            { path: '/profile', element: <Profile></Profile> },
             { path: '*', element: <Error></Error>}
         ]
     }
