@@ -16,14 +16,14 @@ const Footer = () => {
                     </div>
                     <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
                         <div>
-                            <p className="font-semibold tracking-wide text-gray-800">
-                                Our Course
+                            <p className="font-semibold tracking-wide text-gray-800 dark:text-white">
+                                Our Pro Course
                             </p>
-                            <ul className="mt-2 space-y-2">
+                            <ul className="mt-2 space-y-2 ">
                                 <li>
                                     <Link
                                         to="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Physics
                                     </Link>
@@ -31,7 +31,7 @@ const Footer = () => {
                                 <li>
                                     <Link
                                         to="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Math
                                     </Link>
@@ -39,7 +39,7 @@ const Footer = () => {
                                 <li>
                                     <Link
                                         to="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         English
                                     </Link>
@@ -47,7 +47,7 @@ const Footer = () => {
                                 <li>
                                     <Link
                                         to="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Bangla
                                     </Link>
@@ -55,7 +55,7 @@ const Footer = () => {
                                 <li>
                                     <Link
                                         to="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Chemistry
                                     </Link>
@@ -63,7 +63,7 @@ const Footer = () => {
                                 <li>
                                     <Link
                                         to="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Computer
                                     </Link>
@@ -71,14 +71,14 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div>
-                            <p className="font-semibold tracking-wide text-gray-800">
+                            <p className="dark:text-white font-semibolddark:text-white  tracking-wide text-gray-800">
                                 Free Course
                             </p>
                             <ul className="mt-2 space-y-2">
                                 <li>
                                     <Link
                                         to="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Computer Basic
                                     </Link>
@@ -86,7 +86,7 @@ const Footer = () => {
                                 <li>
                                     <Link
                                         to="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Digital Marketing
                                     </Link>
@@ -94,7 +94,7 @@ const Footer = () => {
                                 <li>
                                     <Link
                                         to="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Basic Web design
                                     </Link>
@@ -102,7 +102,7 @@ const Footer = () => {
                                 <li>
                                     <Link
                                         to="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         SEO
                                     </Link>
@@ -110,7 +110,7 @@ const Footer = () => {
                                 <li>
                                     <Link
                                         to="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Graphic Design
                                     </Link>
@@ -118,7 +118,7 @@ const Footer = () => {
                                 <li>
                                     <Link
                                         to="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Affiliate marketing
                                     </Link>
@@ -126,12 +126,12 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div>
-                            <p className="font-semibold tracking-wide text-gray-800">Apples</p>
+                            <p className="dark:text-white font-semibold tracking-wide text-gray-800">Our Items</p>
                             <ul className="mt-2 space-y-2">
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Media
                                     </a>
@@ -139,7 +139,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Brochure
                                     </a>
@@ -147,7 +147,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Nonprofit
                                     </a>
@@ -155,7 +155,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Educational
                                     </a>
@@ -163,7 +163,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Projects
                                     </a>
@@ -171,12 +171,12 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div>
-                            <p className="font-semibold tracking-wide text-gray-800">Cherry</p>
+                            <p className="dark:text-white font-semibold tracking-wide text-gray-800">Cherry</p>
                             <ul className="mt-2 space-y-2">
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Infopreneur
                                     </a>
@@ -184,7 +184,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Personal
                                     </a>
@@ -192,7 +192,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Wiki
                                     </a>
@@ -200,7 +200,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="/"
-                                        className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                                        className="dark:text-white text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                                     >
                                         Forum
                                     </a>

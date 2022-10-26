@@ -1,5 +1,7 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
+import Login from '../Auth/Login';
+import Registration from '../Auth/Registration';
 import Blog from '../Pages/Blog/Blog';
 import CourseSideBar from '../Pages/Courses/CourseSideBar';
 import Error from '../Pages/Error/Error';
@@ -18,6 +20,8 @@ const router = createBrowserRouter([
             { path: '/blog', element:<Blog></Blog>  },
             { path: '/freecourse', element:<FreeCourse></FreeCourse>  },
             { path: '/faq', element: <FAQ></FAQ> },
+            { path: '/login', element: <Login></Login> },
+            { path: '/registration', element: <Registration></Registration> },
             { path: '*', element: <Error></Error>}
         ]
     }

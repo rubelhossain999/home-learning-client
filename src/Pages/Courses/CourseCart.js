@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Context/UserContext';
 
 const CourseCart = () => {
+    const { name } = useContext(AuthContext);
+    console.log(name);
+
+
     return (
         <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
             <article className="flex flex-col bg-slate-500 shadow rounded dark:bg-gray-900">
