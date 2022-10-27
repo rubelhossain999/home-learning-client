@@ -8,6 +8,14 @@ const auth = getAuth(app);
 const UserContext = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [data, setData] = useState();
+
+    // Data Fatch From URL
+    useEffect(() => {
+        fetch('https://home-learning-rh-rubelhossain999.vercel.app/courses/')
+        .then( result => result.json())
+        .then(data => setData(data))
+    }, []);
 
     // 1. User Registration
     const userRegistration = (email, password) => {
@@ -45,6 +53,7 @@ const UserContext = ({ children }) => {
     }
     // 7. Google Login System
     const gitHubLoginprovider = (provider) => {
+        setUser(user);
         return signInWithPopup(auth, provider);
     }
 
@@ -75,7 +84,8 @@ const UserContext = ({ children }) => {
         VerifyUserEmail,
         setLoading,
         googleLoginPop,
-        gitHubLoginprovider
+        gitHubLoginprovider,
+        data
     }
     return (
         <AuthContext.Provider value={authContent}>

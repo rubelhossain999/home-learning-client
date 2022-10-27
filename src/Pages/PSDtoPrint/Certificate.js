@@ -15,7 +15,7 @@ const Certificate = () => {
 
     return (
         <div>
-            {user?.emailVerified ?
+            {user?.uid ?
                 <h2 className='text-green-400 mb-2'><b>Status:</b> User Verified</h2>
                 :
                 <h2 className='text-red-500 mb-2'><b>Status:</b> User Unverified</h2>

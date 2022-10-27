@@ -1,5 +1,5 @@
 import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Context/UserContext';
@@ -7,6 +7,7 @@ import { AuthContext } from '../Context/UserContext';
 const SocialAuth = () => {
     const {googleLoginPop, gitHubLoginprovider } = useContext(AuthContext);
     const navigator = useNavigate();
+    const [user, setUser] = useState();
 
   const googleprovider = new GoogleAuthProvider();
   const gitHubprovider = new GithubAuthProvider();
@@ -26,8 +27,9 @@ const SocialAuth = () => {
         gitHubLoginprovider(gitHubprovider)
             .then((result) => {
                 const user = result.user;
+                setUser(user);
                 console.log(user);
-                navigator('/profile');
+                navigator('/');
                 toast.success('Login is Success!!');
             })
         .catch(error => console.error(error))

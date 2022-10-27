@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -18,7 +19,7 @@ const Banner = () => {
                                 Learn for free from the comfort of your own <br />
                                 Home whilst receiving unlimited tutor support online.
                             </p>
-                            <button className='btn font-semibold lg:mb-20 text-sm text-white'>START A FREE COURSE</button>
+                            <button className='btn font-semibold lg:mb-20 text-sm text-white'><Link to='freecourse'>START A FREE COURSE</Link></button>
                         </div>
                     </div>
                 </div>
