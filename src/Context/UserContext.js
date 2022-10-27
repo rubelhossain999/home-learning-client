@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, sendEmailVerification, signInWithEmailAndPassword, signOut, updateProfile } from 'firebase/auth';
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, sendEmailVerification, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from 'firebase/auth';
 import app from '../Firebase/Firebase.config';
 
 export const AuthContext = createContext();
@@ -39,6 +39,15 @@ const UserContext = ({ children }) => {
         return sendEmailVerification(auth.currentUser);
     }
 
+    // 6. Google Login System
+    const googleLoginPop = (provider) => {
+        return signInWithPopup(auth, provider);
+    }
+    // 7. Google Login System
+    const gitHubLoginprovider = (provider) => {
+        return signInWithPopup(auth, provider);
+    }
+
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
             if (currentUser === null || currentUser.emailVerified) {
@@ -64,7 +73,9 @@ const UserContext = ({ children }) => {
         loading,
         updateUser,
         VerifyUserEmail,
-        setLoading
+        setLoading,
+        googleLoginPop,
+        gitHubLoginprovider
     }
     return (
         <AuthContext.Provider value={authContent}>

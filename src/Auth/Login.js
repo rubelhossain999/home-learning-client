@@ -29,7 +29,7 @@ const Login = () => {
                 setError();
                 console.log(user);
                 form.reset();
-                if(user?.emailVerified){
+                if(user?.email){
                     navigator(from, {replace: true});
                     toast.success("User Login is Success!!");
                 } else{
