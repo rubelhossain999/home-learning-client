@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import { useReactToPrint } from 'react-to-print';
-import CourseCart from '../Courses/CourseCart';
 import Data from './Data';
 
 const PSDtoPrint = () => {

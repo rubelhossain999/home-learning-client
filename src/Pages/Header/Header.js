@@ -13,7 +13,7 @@ const Header = () => {
                     <Link to='/'><img src='https://i.ibb.co/TvNRSr4/Logo.png' alt='logo' /></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal dark:text-white text-black font-medium text-base p-0">
+                    <ul className="menu menu-horizontal cursor-pointer dark:text-white text-black font-medium text-base p-0">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/courses">Courses</Link></li>
                         <li><Link to="/freecourse">Free Course</Link></li>

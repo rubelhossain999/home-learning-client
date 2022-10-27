@@ -14,6 +14,8 @@ const MobileMenu = () => {
                     <li><Link to="/freecourse">Free Course</Link></li>
                     <li><Link to="/faq">FAQ</Link></li>
                     <li><Link to="/blog">Blog</Link></li>
+                    <li><Link to="/profile">Profile</Link></li>
+                    
                 </ul>
             </div>
         </>
